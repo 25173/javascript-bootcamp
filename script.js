@@ -183,12 +183,15 @@ function instruction10() {
     let zin = "Mediacollege Amsterdam";
     let result = "De string waar de bewerkingen op gedaan worden is: " + zin + "<br/>";
     result += "De lengte van de string is: " + zin.length + "<br/>";
-    zin = " " + zin.substr(1);
+    //het vervangen van de eerste letter
     result += "De eerste letter is vervangen door een spatie: " + zin + "<br/>";
+    zin = " " + zin.substr(1);
     result += "De lengte van de string is nog steeds: " + zin.length + "<br/>";
+    // spatie verwijderen
     zin = zin.trim();
     result += "Alle spaties aan het begin en eind zijn nu verwijderd: " + zin + "<br/>";
     result += "De lengte van de string is nu: " + zin.length + "<br/>";
+    // spatie vervangen met een komma
     let words = zin.split(" ");
     result += "Het aantal woorden is: " + words.length + "<br/>";
     result += "Het eerste woord is: " + words[0] + "<br/>";
@@ -201,7 +204,7 @@ function instruction10() {
 function instruction11() {
     let result;
     try {
-        alert(sum(10, 20)); // Sum is not defined yet
+        alert(sum(10, 20));
     }
     catch (ex) {
         result = ex + "<br/>";
